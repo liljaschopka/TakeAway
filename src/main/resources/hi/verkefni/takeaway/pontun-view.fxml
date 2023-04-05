@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import hi.verkefni.takeaway.MatsedillView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" prefHeight="514.0" prefWidth="597.0" spacing="20.0"
+      stylesheets="@../../../stylesheets/pontun-styles.css" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.verkefni.takeaway.PontunController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <AnchorPane prefHeight="552.0" prefWidth="557.0">
+            <children>
+                <Button layoutX="308.0" layoutY="354.0" mnemonicParsing="false" onAction="#fxTakaUrKorfuHandler"
+                        prefHeight="45.0" prefWidth="100.0" text="Eyða úr körfu"/>
+                <Button layoutX="429.0" layoutY="354.0" mnemonicParsing="false" onAction="#fxSetjaKorfuHandler"
+                        prefHeight="45.0" prefWidth="100.0" text="Bæta við körfu"/>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="76.0" layoutY="14.0" prefHeight="26.0"
+                       prefWidth="141.0" text="MATSEÐILL" textAlignment="CENTER"/>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="265.0" layoutY="40.0" prefHeight="26.0"
+                       prefWidth="141.0" text="KARFAN MÍN" textAlignment="CENTER"/>
+                <Button layoutX="358.0" layoutY="415.0" mnemonicParsing="false" onAction="#fxGreidaHandler"
+                        prefHeight="45.0" prefWidth="123.0" text="Greiða"/>
+                <Label layoutX="431.0" layoutY="45.0" prefHeight="17.0" prefWidth="53.0" text="Samtals: "/>
+                <Button layoutX="479.0" layoutY="1.0" mnemonicParsing="false" onAction="#fxNyrVidskiptavinurHandler"
+                        text="Innskráning"/>
+                <Label fx:id="fxVidskiptavinur" layoutX="304.0" layoutY="6.0" prefHeight="17.0" prefWidth="168.0"/>
+                <MatsedillView fx:id="fxMatsedill" layoutX="16.0" layoutY="44.0" prefHeight="387.0" prefWidth="262.0"/>
+                <ListView fx:id="fxKarfa" editable="true" layoutX="296.0" layoutY="66.0" prefHeight="278.0"
+                          prefWidth="255.0"/>
+                <Label fx:id="fxVerd" layoutX="484.0" layoutY="45.0" prefHeight="17.0" prefWidth="67.0"/>
+            </children>
+        </AnchorPane>
+    </children>
+
+
+</VBox>
